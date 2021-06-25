@@ -1,0 +1,13 @@
+on: [ pull_request ]
+
+jobs:
+  cpp_style_check:
+    runs-on: ubuntu-latest
+    name: Check C Style
+    steps:
+    - name: Checkout this commit
+      uses: actions/checkout@v2
+    - name: Run style checks
+      uses: galal-hussein/actions-uncrustify@v1
+      with: 
+        configPath: 'tools/uncrustify.cfg'
