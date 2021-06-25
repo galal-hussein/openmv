@@ -8,6 +8,6 @@ jobs:
     - name: Checkout this commit
       uses: actions/checkout@v2
     - name: Run style checks
-      uses: galal-hussein/actions-uncrustify@v1
+      uses: galal-hussein/action-c-uncrustify@v1
       with: 
         configPath: 'tools/uncrustify.cfg'
